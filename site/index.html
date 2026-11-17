@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoomer</title>
+  <meta name="description" content="Zoomer: search the web.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" class="home">
+    <header class="bar">
+      <a class="logo" href="/" aria-label="Zoomer home">Z<i></i><i></i>mer</a>
+      <form id="form" role="search">
+        <input id="q" name="q" type="search" placeholder="Search the web" autocomplete="off" aria-label="Search the web" autofocus>
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <p id="status" aria-live="polite"></p>
+    <ol id="results"></ol>
+    <nav id="pager" aria-label="Result pages"></nav>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
